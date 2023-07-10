@@ -1,0 +1,14 @@
+{% extends "get_first_unique/base.html" %}
+
+{% block content %}
+    <div class="content">
+        <div class="subtitle is-4">
+            <form action="{% url 'result' %}" method="post">
+                {% csrf_token %}
+                <textarea class="textarea" name="text" rows="6" cols="70" placeholder="write here yout text"></textarea></textarea>
+                    <input class="button" type="submit" name="submitInfo" value="--> Send!">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

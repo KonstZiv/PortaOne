@@ -1,0 +1,4 @@
+black==23.3.0
+Django==4.2.3
+flake8==6.0.0
+python-dotenv==1.0.0

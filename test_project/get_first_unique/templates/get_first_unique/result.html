@@ -1,0 +1,12 @@
+{% extends "get_first_unique/base.html" %}
+{%block heading%}
+    <hr>
+    <h2 class="title is-1">Result:    <strong>{{text}}</strong></h2>
+    <hr>
+{% endblock heading %}
+
+{% block end %}
+    <div class="level-left">
+        <a class="button" href="{% url 'index' %}"> --> to start page </a>
+    </div>
+{% endblock end %}
